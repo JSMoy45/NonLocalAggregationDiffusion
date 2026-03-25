@@ -121,7 +121,7 @@ tHist(1)    = 0;
 massHist(1) = dx * sum(u);
 uHist(1,:)  = u.';
 
-%% ===================== FIXED LIVE PLOT SETUP =====================
+%% ===================== LIVE PLOT SETUP =====================
 
 % Fixed y-axis limits so the plot does not rescale every frame
 yPad = max(0.05, 0.1 * max(abs(u - mean(u))));
