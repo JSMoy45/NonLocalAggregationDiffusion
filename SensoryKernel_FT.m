@@ -1,8 +1,0 @@
-function [w_hat] = SensoryKernel_FT(n, L, a, nx)
-    k = n * pi / L;
-    x = linspace(-L, L, nx);
-    W = SensoryKernel(x, a);
-    integrand = W .* exp(-1i * k * x);
-    w_hat = trapz(x, integrand);
-    w_hat = real(w_hat);
-end
